@@ -43,3 +43,11 @@ body {
 .board-container {
     position: relative;
 }
+
+.board,
+.win {
+    box-sizing: 5px;
+    box-shadow: 0 25px 50 px rgb(33, 33, 33 3 25%);
+    background: -o-linear-gradient( 45deg, red, orange, yellow, green, blue, indigo, violet, red);
+    transition: ;
+}
