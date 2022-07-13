@@ -19,3 +19,14 @@ body {
     margin-bottom: 20;
 
 }
+
+.button {
+    background: #ffffff;
+    color: black;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: 0;
+    cursor: pointer;
+    font-family: monospace;
+    font-size: 25px;
+}
