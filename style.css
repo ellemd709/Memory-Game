@@ -30,3 +30,7 @@ body {
     font-family: monospace;
     font-size: 25px;
 }
+
+.disabled {
+    color: #757575;
+}
