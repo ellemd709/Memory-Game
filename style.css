@@ -39,3 +39,7 @@ body {
     color: #ffffff;
     font: 15pt;
 }
+
+.board-container {
+    position: relative;
+}
