@@ -34,3 +34,8 @@ body {
 .disabled {
     color: #757575;
 }
+
+.stats {
+    color: #ffffff;
+    font: 15pt;
+}
