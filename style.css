@@ -60,3 +60,10 @@ body {
     grid-gap: 25px;
     
 }
+
+.card {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
