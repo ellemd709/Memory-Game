@@ -21,8 +21,8 @@ body {
 }
 
 .button {
-    background: #ffffff;
-    color: black;
+    background: #000000;
+    color: rgb(255, 255, 255);
     border-radius: 5px;
     padding: 10px 20px;
     border: 0;
