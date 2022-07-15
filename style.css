@@ -87,3 +87,12 @@ body {
     line-height: 100px;
     background: #eae7e0;
 }
+
+.card-flipped .card-front {
+    transform: rotateY(180deg) rotateZ(50deg);
+}
+
+.card-flipped .card-back {
+    transform: rotateY(0) rotateZ(0);
+
+}
