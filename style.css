@@ -68,3 +68,22 @@ body {
     cursor: pointer;
 }
 
+.card-front,
+.card-back {
+    position: absolute;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    background: #280f29;
+    transition: transform .5s cubic-bezier(0.4, 0.0, 0.2, 1);
+    backface-visibility: hidden;
+}
+
+.card-back {
+    transform: rotateY(180deg) rotateZ(50deg);
+    font-size: 30px;
+    user-select: none;
+    text-align: center;
+    line-height: 100px;
+    background: #eae7e0;
+}
