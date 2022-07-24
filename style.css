@@ -45,3 +45,10 @@ p {
 }
 
     
+div#tableContainer {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-spacing: 10px;
+  }
