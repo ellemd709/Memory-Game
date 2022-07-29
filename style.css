@@ -29,6 +29,7 @@ p {
   font-family: "Open Sans", Verdana, Geneva, Tahoma, sans-serif;
   color: #333333;
   margin-left: 70px;
+  padding-bottom: 50px;
 }
 
 .row {
@@ -36,7 +37,7 @@ p {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    padding-top: 50px;
+    padding-top: 10px;
 }
 
 .card {
@@ -47,7 +48,7 @@ p {
     width: 100px;
     height: 100px;
     background-color:blueviolet;
-    padding-top: 15px;
+   
 }
 
 .card:hover {
