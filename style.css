@@ -1,7 +1,10 @@
 body {
    
     margin-top: 250px;
-    
+    display:flex; 
+    align-items: center;
+    flex-direction:column; 
+    justify-content:center;
     height: 100%;
     width: 100%;
     background: linear-gradient(90deg,
@@ -29,16 +32,22 @@ p {
 }
 
 .row {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     padding-top: 50px;
 }
 
 .card {
     display: inline-block;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     width: 100px;
     height: 100px;
     background-color:blueviolet;
-    
+    padding-top: 15px;
 }
 
 .card:hover {
@@ -52,10 +61,8 @@ p {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    border-spacing: 10px;
+    align-items: center;
+    border-spacing: 15px;
     margin-top: auto;
   }
 
@@ -82,6 +89,9 @@ p {
 
 .board-container {
     position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .board,
