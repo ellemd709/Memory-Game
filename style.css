@@ -125,7 +125,7 @@ p {
     backface-visibility: hidden;
 }
 
-.card-back {
+.back {
     transform: rotateY(180deg) rotateZ(50deg);
     font-size: 28pt;
     user-select: none;
