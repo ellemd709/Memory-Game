@@ -4,8 +4,8 @@ console.log(greet);
 const card_fronts = {
     "card 1": "./images/loveall.png",
     "card 2": "./images/loveallheart.png",
-    "card 3": "/images/loveboy.png",
-    "card 4": "/images/lovegirl.png",
+    "card 3": "./images/loveboy.png",
+    "card 4": "./images/lovegirl.png",
     "card 5": "/images/lovemusic.png",
     "card 6": "/images/loverainbow.png",
     "card 7": "/images/loveall.png",
