@@ -10,10 +10,10 @@ const card_fronts = {
     "card 6": "./images/loverainbow.png",
     "card 7": "./images/loveall.png",
     "card 8": "./images/loveallheart.png",
-    "card 9": "/images/loverainbow.png",
-    "card 10":"/images/lovemusic.png",
-    "card 11":"/images/loveboy.png",
-    "card 12":"/images/lovegirl.png"
+    "card 9": "./images/loverainbow.png",
+    "card 10":"./images/lovemusic.png",
+    "card 11":"./images/loveboy.png",
+    "card 12":"./images/lovegirl.png"
 }
 
 const selectors = {
