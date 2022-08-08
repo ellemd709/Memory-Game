@@ -97,3 +97,14 @@ for (var i = 0; i < selectors.cards.length; i++) {
       showFront(this)
     })
 }
+
+//card click and flip
+
+const cards = document.querySelectorAll('.card');
+
+function flipCard() {
+  this.classList.toggle('flip');
+}
+
+cards.forEach(card => card.addEventListener('click', flipCard));
+
