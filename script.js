@@ -108,3 +108,10 @@ function flipCard() {
 
 cards.forEach(card => card.addEventListener('click', flipCard));
 
+//shuffle cards
+function shuffle() {
+    cards.forEach(card => {
+      let ramdomPos = Math.floor(Math.random() * 12);
+      card.style.order = ramdomPos;
+    });
+  }
