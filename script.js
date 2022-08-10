@@ -100,6 +100,15 @@ for (var i = 0; i < selectors.cards.length; i++) {
 
 //flipping
 
+function flipCard() {
+    var CardId = this.getAttribute('data-id')
+    cardsChosen.push(cardArray0[cardId].name)
+    cardsChosenId.push(CardId)
+    this.setAttribute('src', cardArray[cardId].img)
+    if (cardsChosen.length === 2) {
+        setTimeout(checkForMatch, 500)
+    }
+}
 
 
 
