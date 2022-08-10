@@ -100,28 +100,17 @@ for (var i = 0; i < selectors.cards.length; i++) {
 
 //flipping
 
-const flipCard = card => {
-    state.flippedCards++
-    state.totalFlips++
 
-    if (!state.gameStarted) {
-        startGame()
-    }
 
-    if (state.flippedCards <= 2) {
-        card.classList.add('flipped')
-    }
 
-    if (state.flippedCards === 2) {
-        const flippedCards = document.querySelectorAll('.flipped:not(.matched)')
+//check for matches
 
-        if (flippedCards[0].innerText === flippedCards[1].innerText) {
-            flippedCards[0].classList.add('matched')
-            flippedCards[1].classList.add('matched')
-        }
-
-        setTimeout(() => {
-            flipBackCards()
-        }, 1000)
+function checkForMatch() {
+    var card = document.querySelectorAll('img')
+    const optionOneId = cardsChosenId[0]
+    const optionTwoId = cardsChosenId [1]
+    if (cardsChosen[0] === cardsChosen [1]) {
+        alert(`You found a Match`)
+        cards[optionOneId].setAttribute('src')
     }
 }
