@@ -26,6 +26,16 @@ const selectors = {
     cards: document.querySelectorAll('.card')
 }
 
+
+const state = {
+    gameStarted: false,
+    flippedCards: 0,
+    totalFlips: 0,
+    totalTime: 0,
+    loop: null
+}
+
+
 function showBack(card) {
     card.querySelector('img').src = './images/purplesquare.png'
 }
@@ -36,15 +46,6 @@ function showFront(card) {
 
 for (var i = 0; i < selectors.cards.length; i++) {
     showBack(selectors.cards[i]);
-}
-
-console.log(selectors)
-const state = {
-    gameStarted: false,
-    flippedCards: 0,
-    totalFlips: 0,
-    totalTime: 0,
-    loop: null
 }
 
 const shuffle = array => {
