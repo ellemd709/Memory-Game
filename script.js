@@ -44,9 +44,12 @@ function showFront(card) {
     card.querySelector('img').src = card_fronts[card.querySelector('img').id]
 }
 
+//unsure of this 
 for (var i = 0; i < selectors.cards.length; i++) {
     showBack(selectors.cards[i]);
 }
+
+//would i need to start index at 1 instead of 0 
 
 const shuffle = array => {
     const clonedArray = [...array]
@@ -61,6 +64,8 @@ const shuffle = array => {
 
     return clonedArray
 }
+
+//would i need to start index at 1 instead of 0 
 
 const pickRandom = (array, items) => {
     const clonedArray = [...array]
@@ -106,7 +111,7 @@ const generateGame = () => {
         throw new Error("The dimension of the board must be an even number.")
     }
 
-    const cards = ['card 1', 'card 2','card 3','card 4','card 5','card 6','card 7','card 8','card 9','card 10','card 11','card 12' ]
+    const card = ['card 1', 'card 2','card 3','card 4','card 5','card 6','card 7','card 8','card 9','card 10','card 11','card 12' ]
     const picks = pickRandom(card (dimensions * dimensions) / 2) 
     const items = shuffle([...picks, ...picks])
     const cards = `
