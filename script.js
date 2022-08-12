@@ -99,28 +99,28 @@ for (var i = 0; i < selectors.cards.length; i++) {
     })
 }
 
-//flipping
+const generateGame = () => {
+    const dimensions = selectors.board.getAttribute('data-dimension')
 
-function flipCard() {
-    var CardId = this.getAttribute('data-id')
-    cardsChosen.push(cardArray0[cardId].name)
-    cardsChosenId.push(CardId)
-    this.setAttribute('src', cardArray[CardId].img)
-    if (cardsChosen.length === 2) {
-        setTimeout(checkForMatch, 500)
+    if (dimensions % 2 !== 0) {
+        throw new Error("The dimension of the board must be an even number.")
     }
-}
 
+    const card = ['card 1', 'card 2','card 3','card 4','card 5','card 6','card 7','card 8','card 9','card 10','card 11','card 12' ]
+    const picks = pickRandom(cards (dimensions * dimensions) / 2) 
+    const items = shuffle([...picks, ...picks])
+    const cards = `
+        <div class="board" style="grid-template-columns: repeat(${dimensions}, auto)">
+            ${items.map(item => `
+                <div class="card">
+                    <div class="card-front"></div>
+                    <div class="card-back">${item}</div>
+                </div>
+            `).join('')}
+       </div>
+    `
+    
+    const parser = new DOMParser().parseFromString(cards, 'text/html')
 
-
-//check for matches
-
-function checkForMatch() {
-    var card = document.querySelectorAll('img')
-    const optionOneId = cardsChosenId[0]
-    const optionTwoId = cardsChosenId [1]
-    if (cardsChosen[0] === cardsChosen [1]) {
-        alert(`You found a Match`)
-        cards[optionOneId].setAttribute('src')
-    }
+    selectors.board.replaceWith(parser.querySelector('.board'))
 }
