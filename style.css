@@ -125,14 +125,7 @@ p {
     backface-visibility: hidden;
 }
 
-.back {
-    transform: rotateY(180deg) rotateZ(50deg);
-    font-size: 28pt;
-    user-select: none;
-    text-align: center;
-    line-height: 100px;
-    background: #FDF8E6;
-}
+
 
 .card.flipped .card-front {
     transform: rotateY(180deg) rotateZ(50deg);

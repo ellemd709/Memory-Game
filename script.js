@@ -83,7 +83,7 @@ const generateGame = () => {
 }
 
 const card = ['card 1', 'card 2', 'card 3','card 4','card 5','card 6','card 7','card 8','card 9','card 10','card 11','card 12']
-    const picks = pickRandom(card, (dimensions * dimensions) / 2) 
+    const picks = pickRandom(cards, (dimensions * dimensions) / 2) 
     const items = shuffle([...picks, ...picks])
     const cards = `
         <div class="board" style="grid-template-columns: repeat(${dimensions}, auto)">
