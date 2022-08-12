@@ -146,3 +146,36 @@ const flipCard = card => {
         }, 1000)
     }
 }
+
+  // If there are no more cards that we can flip, we won the game
+  if (!document.querySelectorAll('.card:not(.flipped)').length) {
+    setTimeout(() => {
+        selectors.boardContainer.classList.add('flipped')
+        selectors.win.innerHTML = `
+            <span class="win-text">
+                You won!<br />
+                with <span class="highlight">${state.totalFlips}</span> moves<br />
+                under <span class="highlight">${state.totalTime}</span> seconds
+            </span>
+        `
+
+        clearInterval(state.loop)
+    }, 1000)
+}
+
+
+const attachEventListeners = () => {
+document.addEventListener('click', event => {
+    const eventTarget = event.target
+    const eventParent = eventTarget.parentElement
+
+    if (eventTarget.className.includes('card') && !eventParent.className.includes('flipped')) {
+        flipCard(eventParent)
+    } else if (eventTarget.nodeName === 'BUTTON' && !eventTarget.className.includes('disabled')) {
+        startGame()
+    }
+})
+}
+
+generateGame()
+attachEventListeners()
