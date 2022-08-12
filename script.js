@@ -95,3 +95,20 @@ const card = ['card 1', 'card 2', 'card 3','card 4','card 5','card 6','card 7','
             `).join('')}
        </div>
     `
+
+    const parser = new DOMParser().parseFromString(cards, 'text/html')
+
+    selectors.board.replaceWith(parser.querySelector('.board'))
+
+
+const startGame = () => {
+    state.gameStarted = true
+    selectors.start.classList.add('disabled')
+
+    state.loop = setInterval(() => {
+        state.totalTime++
+
+        selectors.moves.innerText = `${state.totalFlips} moves`
+        selectors.timer.innerText = `time: ${state.totalTime} sec`
+    }, 1000)
+}
