@@ -11,14 +11,14 @@ const card_fronts = {
       };
 
 const selectors = {
-    boardContainer: document.querySelector('.table-container'),
-    board: document.querySelector('.board'),
-    moves: document.querySelector('.moves'),
-    timer: document.querySelector('.timer'),
-    start: document.querySelector('button'),
-    win: document.querySelector('.win'),
-    cards: document.querySelectorAll('.card')
-}
+        boardContainer: document.querySelector(".board-container"),
+        board: document.querySelector(".board"),
+        moves: document.querySelector(".moves"),
+        timer: document.querySelector(".timer"),
+        start: document.querySelector("button"),
+        win: document.querySelector(".win"),
+        cards: document.querySelectorAll(".card"),
+      };
 
 
 const state = {
