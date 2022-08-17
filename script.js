@@ -2,19 +2,13 @@ let greet = "Hello Everyone";
 console.log(greet);
 
 const card_fronts = {
-    "card 1": "./images/loveall.png",
-    "card 2": "./images/loveallheart.png",
-    "card 3": "./images/loveboy.png",
-    "card 4": "./images/lovegirl.png",
-    "card 5": "./images/lovemusic.png",
-    "card 6": "./images/loverainbow.png",
-    "card 7": "./images/loveall.png",
-    "card 8": "./images/loveallheart.png",
-    "card 9": "./images/loverainbow.png",
-    "card 10":"./images/lovemusic.png",
-    "card 11":"./images/loveboy.png",
-    "card 12":"./images/lovegirl.png"
-}
+        "card 1": "./images/loveall.png",
+        "card 2": "./images/loveallheart.png",
+        "card 3": "./images/loveboy.png",
+        "card 4": "./images/lovegirl.png",
+        "card 5": "./images/lovemusic.png",
+        "card 6": "./images/loverainbow.png",
+      };
 
 const selectors = {
     boardContainer: document.querySelector('.table-container'),
