@@ -29,6 +29,7 @@ const state = {
         loop: null,
       };
 
+      //still working on this here
 
 function showBack(card) {
     card.querySelector('img').src = './images/purplesquare.png'
