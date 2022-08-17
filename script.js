@@ -22,12 +22,12 @@ const selectors = {
 
 
 const state = {
-    gameStarted: false,
-    flippedCards: 0,
-    totalFlips: 0,
-    totalTime: 0,
-    loop: null
-}
+        gameStarted: false,
+        flippedCards: 0,
+        totalFlips: 0,
+        totalTime: 0,
+        loop: null,
+      };
 
 
 function showBack(card) {
