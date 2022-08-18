@@ -30,9 +30,9 @@ const state = {
 };
 
 
-      //still working on this here
+      //shuffle cards 
 
-      const shuffle = (array) => {
+        const shuffle = (array) => {
         const clonedArray = [...array];
     
         for (let index = clonedArray.length - 1; index > 0; index--) {
@@ -169,6 +169,8 @@ const state = {
             }
         });
     };
+
+    // a replay function to rewatch game played
     
     const replayGame = () => {
         state.gameStarted = false;
