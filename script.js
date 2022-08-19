@@ -170,7 +170,7 @@ const state = {
         });
     };
 
-    // a replay function to rewatch game played
+    // a replay function to play again
     
     const replayGame = () => {
         state.gameStarted = false;
