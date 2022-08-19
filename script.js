@@ -8,7 +8,14 @@ const card_fronts = {
     "card 4": "./images/lovegirl.png",
     "card 5": "./images/lovemusic.png",
     "card 6": "./images/loverainbow.png",
+    "card 7": "./images/loveall.png",
+  "card 8": "./images/loveallheart.png",
+  "card 9": "./images/loveboy.png",
+  "card 10": "./images/lovegirl.png",
+  "card 11": "./images/lovemusic.png",
+  "card 12": "./images/loverainbow.png" 
 };
+
 
 const selectors = {
     boardContainer: document.querySelector(".board-container"),
@@ -31,21 +38,21 @@ const state = {
 
 
       //shuffle cards 
-
-        const shuffle = (array) => {
-        const clonedArray = [...array];
-    
-        for (let index = clonedArray.length - 1; index > 0; index--) {
-            const randomIndex = Math.floor(Math.random() * (index + 1));
-            const original = clonedArray[index];
-    
-            clonedArray[index] = clonedArray[randomIndex];
-            clonedArray[randomIndex] = original;
+      
+      function shuffle(array) {
+        let currentIndex = array.length,  randomIndex;
+      
+        while (currentIndex != 0) {
+      
+          randomIndex = Math.floor(Math.random() * currentIndex);
+          currentIndex--;
+          
+          [array[currentIndex], array[randomIndex]] = [
+            array[randomIndex], array[currentIndex]];
         }
-    
-        return clonedArray;
-    };
-    
+      
+        return array;
+      }
     
     const pickRandom = (array, items) => {
         const clonedArray = [...array];
