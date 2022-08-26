@@ -3,19 +3,19 @@ This project is based on the children’s card game, where the player tries to m
 
 
 # Reflection
-This is my final project I did with my coach Gillian. 
-Learning from Gillian was a great experience and I found her helpful and always leading an ear to help me solve most of my issues I was having such as flipping the cards back once clicked if not a match and shuffling the cards. 
+This is my final project I did with my coach Gillian through the Get Coding Program. 
+Learning from Gillian was a great experience and I found her helpful and always leading an ear to help me solve most of my issues. Some thing I struggled with were flipping the cards back once clicked if not a match and shuffling the cards. 
 Javascript challenged me in many ways to think outside the box. 
-I enjoyed putting this project together and seeing the final result and showing my family and friends.
+I enjoyed putting this project together, seeing the final result and showing my family and friends.
 
-I am currently working on a larger game with 20 cards using similar code to keep JavaScript in my brain. 
+I am currently working on a larger scale game with 20 cards using similar code to keep JavaScript in my brain. 
 
 
 # How To Play
 
-- Click start button OR click a card to start game
-- Click 2 cards and determin is a match is made
-- Determine if two selected cards are a match; if match stay visible; if not a match flip back
+- Click start button OR click a card to begin
+- Click another card and determin if  a match is made
+- If two selected cards are a match; card matches stay visible; if not a match flip back and click another card
 - Once all matches are found; win board is shown with a win board with time and moves and a replay button
 
 # Win Board
@@ -29,6 +29,7 @@ The game contains;
 
 - Display of 12 cards 
 - Duplicate the cards to have 2 sets of 6
+- Rainbow theme
 - Start Button
 - Timer and moves counter 
 - Randomize the display of cards
