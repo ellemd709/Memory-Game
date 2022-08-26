@@ -55,4 +55,4 @@ https://ellemd709.github.io/Memory-Game/
 
 
 # Screenshot Home Screen 
- ![Screenshot] (/memorygame/images/homescreen.png)
+![alt text](/images/homescreen.png)
