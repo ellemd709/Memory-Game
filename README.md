@@ -19,7 +19,7 @@ I am currently working on a larger game with 20 cards using similar code.
 - once all matches are found; win board is shown with a win board with time and moves and a replay button
 
 # Screenshot
- ![Screenshot] (images/win.png)
+ ![Screenshot] (memory game/images/win.png)
 
 
 # Overview
@@ -41,4 +41,4 @@ https://ellemd709.github.io/Memory-Game/
 
 
 # Screenshot
- ![Screenshot] (images/homescreen.png)
+ ![Screenshot] (memory game/images/homescreen.png)
