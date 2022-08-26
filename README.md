@@ -1,3 +1,5 @@
+# PRIDE MEMORY GAME
+
 
 # Reflection
 This is my final project I did with my coach Gillian. I decided to honour Pride in our province and used CSS, HTML and vanilla JavaScript. Memory game is a simple yet fun game for all ages to enjoy. 
