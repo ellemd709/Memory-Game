@@ -18,7 +18,7 @@ I am currently working on a larger game with 20 cards using similar code.
 - Determine if two selected cards are a match; if match stay visible; if not a match flip back
 - once all matches are found; win board is shown with a win board with time and moves and a replay button
 
-# Screenshot
+# Screenshot Win Board
  ![Screenshot] (memory game/images/win.png)
 
 
@@ -40,5 +40,5 @@ If the player successfully matches all of the cards, a “win” message is disp
 https://ellemd709.github.io/Memory-Game/
 
 
-# Screenshot
+# Screenshot Home Screen 
  ![Screenshot] (memory game/images/homescreen.png)
