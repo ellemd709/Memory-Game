@@ -19,7 +19,7 @@ I am currently working on a larger game with 20 cards using similar code to keep
 - Once all matches are found; win board is shown with a win board with time and moves and a replay button
 
 # Screenshot Win Board
- ![Screenshot] (/memorygame/images/win.png)
+ ![alt text](/images/win.png)
 
 
 # Overview
